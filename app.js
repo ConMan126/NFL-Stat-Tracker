@@ -137,7 +137,6 @@ function getReceivingStats () {
     stats.getReceivingStats()
         .then(receivingData => {
             ui.paintReceivingStats(receivingData);
-            console.log(receivingData);
         })
         .catch(err => console.log(err));
 }
@@ -147,7 +146,6 @@ function getRushingStats () {
     stats.getRushingStats()
         .then(rushingData => {
             ui.paintRushingStats(rushingData);
-            console.log(rushingData);
         })
         .catch(err => console.log(err));
 }
@@ -157,7 +155,6 @@ function getPassingStats () {
     stats.getPassingStats()
         .then(passingData => {
             ui.paintPassingStats(passingData);
-            console.log(passingData);
         })
         .catch(err => console.log(err));
 }
