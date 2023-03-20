@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Anton", sans-serif; }
+
+.container {
+  margin: 5rem auto;
+  text-align: center; }
+
+.card {
+  background: #369ffb;
+  display: inline-block;
+  padding: 3rem;
+  border-radius: 5px; }
+
+a {
+  text-decoration: none; }
+
+.btn {
+  display: inline-block;
+  padding: 5px;
+  background: #65b7ff;
+  border: white 1px solid;
+  border-radius: 5px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif; }
+  .btn:hover {
+    color: black;
+    cursor: pointer; }
+
+.mt-1 {
+  margin-top: 1rem; }
+
+.py-1 {
+  padding: 1rem; }
+
+.py-2 {
+  padding: 2rem; }
+
+ul {
+  list-style-type: none; }
+
+li {
+  text-decoration: none; }
+
+.alert {
+  background: red;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5px; }
+
+#stats-logo {
+  max-height: 150px;
+  max-width: 150px; }
+
+#stats-list {
+  background: white;
+  text-align: left; }
+  #stats-list li {
+    border-bottom: dotted 1px black; }
+    #stats-list li:last-child {
+      border: none; }
+
+#stats-team {
+  text-transform: lowercase; }
+  #stats-team::first-letter {
+    text-transform: capitalize; }
+
+.modal {
+  position: fixed;
+  margin: 10rem auto;
+  text-align: center; }
+  .modal::backdrop {
+    background: rgba(0, 0, 0, 0.7); }
+
+#change-form {
+  width: 500px; }
+
+#change-city, #change-team {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 10px; }
+  #change-city #city, #change-city #team, #change-team #city, #change-team #team {
+    padding: 5px; }

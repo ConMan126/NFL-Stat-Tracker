@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title>NFL Stat Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="stats">
+            <h1 id="stats-header" class="py-1">NFL STAT TRACKER</h1>
+            <h3 id="stats-city" class="py-1">Cincinnati</h3>
+            <h3 id="stats-team" class="py-1">Bengals</h3>
+            <img src="/dist/img/bengals.png" id="stats-logo" class="py-1">
+            <ul id="stats-list" class="mt-1">
+                <li id="stats-receiving-touchdowns" class="py-1">Receiving Touchdowns:</li>
+                <li id="stats-receptions" class="py-1">Total Receptions:</li>
+                <li id="stats-rushing-touchdowns" class="py-1">Rushing Touchdowns:</li>
+                <li id="stats-rushing-yards" class="py-1">Rushing Yards:</li>
+                <li id="stats-passing-yards" class="py-1">Passing Yards:</li>
+            </ul>
+            <br>
+            <button type="button" class="btn btn-primary open-button" data-bs-toggle="modal" data-bs-target="locModal" class="default-text">Change Team</button>
+        </div>
+    </div>
+
+    <dialog class="modal py-1">
+       <h2>Change Team</h2> 
+       <form id="change-form">
+        <div id="change-team">
+            <label for="team">Team</label>
+            <input type="text" id="team">
+        </div>
+       </form>
+       <form class="modal-footer" method="dialog">
+           <button class="btn btn-primary close-button">Close</button>
+           <button id="change-team-btn" type="submit" class="btn btn-primary">Change Teams</button>
+       </form>
+    </dialog>
+
+    <script src="modal.js"></script>
+    <script src="ui.js"></script>
+    <script src="stats.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

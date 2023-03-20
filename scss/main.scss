@@ -1,0 +1,59 @@
+@import 'variables';
+@import 'utilities';
+
+// Stats 
+#stats {
+    &-logo {
+        max-height: 150px;
+        max-width: 150px;
+    }
+
+    &-list {
+        background: white;
+        text-align: left;
+
+        li {
+            border-bottom: dotted 1px black;
+
+            &:last-child {
+                border: none;
+            }
+        }
+    }
+
+    &-team {
+        text-transform: lowercase;
+
+        &::first-letter {
+            text-transform: capitalize;
+        }
+    }
+}
+
+// Modal
+.modal {
+    position: fixed;
+    margin: 10rem auto;
+    text-align: center;
+
+    &::backdrop {
+        background: rgba($color: black, $alpha: 0.7);
+    }
+}
+
+#change {
+    &-form {
+        width: 500px;
+    }
+
+    &-city, &-team {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 10px;
+
+        #city, #team {
+            padding: 5px;
+        }
+    }
+}
